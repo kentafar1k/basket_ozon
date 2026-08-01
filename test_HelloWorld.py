@@ -11,9 +11,13 @@
 
 
 
-
 import HelloWorld
+from cart import total
 
 
 def test_hello_world():
     assert 'Hello World!' == HelloWorld.hello_world()
+
+
+def test_empty_cart_total_is_zero():
+    assert total({}, {}) == 0
